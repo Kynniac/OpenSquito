@@ -24,7 +24,7 @@ Les systèmes commerciaux les plus efficaces pour piéger les **femelles** utili
 **OpenSquito adopte une approche plus vertueuse et économique** : en ciblant les **mâles**, il suffit de produire un **son** spécifique (simulant le vol des femelles) pour les attirer, sans émissions ni consommables.
 Pourquoi piéger en priorité les moustiques mâles ?
 
-* 🎯 **Attraction sonore ciblée** : les mâles recherchent activement le bourdonnement des femelles (≈ 400–600 Hz). Émettre judicieusement dans cette plage de fréquences permet de les attirer sélectivement.
+* 🎯 **Attraction sonore ciblée** : les mâles recherchent activement le bourdonnement des femelles (≈ 400–600 Hz). Émettre cette bande fréquentielle permet de les attirer sélectivement.
 * 🚫 **Briser le cycle de reproduction** : un seul mâle peut féconder plusieurs femelles ; retirer une petite fraction de mâles réduit significativement la descendance.
 * 🧪 **Surveillance passive** : mesurer le nombre de mâles capturés offre un indicateur indirect de l’activité globale, utile pour la recherche et l’alerte précoce.
 * 🌱 **Approche écologique** : aucun pesticide, peu d’énergie, fonctionnement silencieux.
@@ -38,8 +38,9 @@ Cette stratégie complète les méthodes de lutte dirigées contre les femelles 
 * ✅ **Émission sonore** paramétrable (300–600 Hz) pour attirer les moustiques mâles
 * 🎤 **Détection acoustique** par microphone (I2S ou analogique)
 * 💨 **Aspiration contrôlée** avec ventilateur silencieux (Noctua 80 mm ≈ 15 CFM)
-* 🧠 **Automatisations** (optionnelles)
+* 🧠 **Automatisation** via ESPHome + Home Assistant (optionnelle)
 * 🔋 **Mode autonome offline** : déclenchement local, stockage de logs sur carte SD ou envoi LoRa/Wi-Fi ponctuel
+* 🌐 **Connexion à un réseau citoyen mondial (OpenSquito Net)** : partage de données de capture pour la cartographie et la recherche
 
 ---
 
@@ -57,7 +58,7 @@ Cette stratégie complète les méthodes de lutte dirigées contre les femelles 
 
 ## 🦟 Espèces cibles & adaptation du piège
 
-* **Bande sonore ajustable** : modifiez les fréquences émises pour cibler d’autres espèces (Culex, Anopheles…).
+* **Bande sonore ajustable** : modifiez la fréquence émise pour cibler d’autres genres (Culex, Anopheles…).
 * **Paramètres régionaux** : vitesse de ventilation, grille anti-évasion, taille du filet peuvent être adaptés aux espèces locales.
 * Un tableau de correspondance fréquence ⇄ espèce la plus réceptive figure dans `docs/species_frequency.md` (compilé par la communauté).
 
