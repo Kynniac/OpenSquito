@@ -64,7 +64,7 @@ Cette stratégie complète les méthodes de lutte dirigées contre les femelles 
 
 ---
 
-## 🌐 Réseau citoyen mondial (OpenSquito Net)
+## 🌐 Réseau citoyen mondial (OpenSquito.net)
 
 Même sans domotique locale, la version connectée peut :
 
