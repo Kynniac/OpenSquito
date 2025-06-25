@@ -40,7 +40,7 @@ Cette stratégie complète les méthodes de lutte dirigées contre les femelles 
 * 💨 **Aspiration contrôlée** avec ventilateur silencieux (Noctua 80 mm ≈ 15 CFM)
 * 🧠 **Automatisation** via ESPHome + Home Assistant (optionnelle)
 * 🔋 **Mode autonome offline** : déclenchement local, stockage de logs sur carte SD ou envoi LoRa/Wi-Fi ponctuel
-* 🌐 **Connexion à un réseau citoyen mondial (OpenSquito Net)** : partage de données de capture pour la cartographie et la recherche
+* 🌐 **Connexion à un réseau citoyen mondial (opensquito.net)** : partage de données de capture pour la cartographie et la recherche
 
 ---
 
