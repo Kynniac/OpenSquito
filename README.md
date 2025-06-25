@@ -24,7 +24,7 @@ Les systèmes commerciaux les plus efficaces pour piéger les **femelles** utili
 **OpenSquito adopte une approche plus vertueuse et économique** : en ciblant les **mâles**, il suffit de produire un **son** spécifique (simulant le vol des femelles) pour les attirer, sans émissions ni consommables.
 Pourquoi piéger en priorité les moustiques mâles ?
 
-* 🎯 **Attraction sonore ciblée** : les mâles recherchent activement le bourdonnement des femelles (≈ 400–600 Hz). Émettre cette bande fréquentielle permet de les attirer sélectivement.
+* 🎯 **Attraction sonore ciblée** : les mâles recherchent activement le bourdonnement des femelles (≈ 400–600 Hz). Émettre judicieusement dans ces plages de quéquence permet de les attirer sélectivement.
 * 🚫 **Briser le cycle de reproduction** : un seul mâle peut féconder plusieurs femelles ; retirer une petite fraction de mâles réduit significativement la descendance.
 * 🧪 **Surveillance passive** : mesurer le nombre de mâles capturés offre un indicateur indirect de l’activité globale, utile pour la recherche et l’alerte précoce.
 * 🌱 **Approche écologique** : aucun pesticide, peu d’énergie, fonctionnement silencieux.
