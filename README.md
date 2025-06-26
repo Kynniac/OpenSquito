@@ -1,8 +1,9 @@
 # OpenSquito 🦟
 
-**OpenSquito** est un projet open source de piège à moustiques intelligent, basé sur l’ESP32, conçu pour attirer, détecter et capturer principalement les moustiques **mâles** à l’aide de sons spécifiques, d’une détection acoustique et d’une aspiration contrôlée.
+**OpenSquito** est un **projet** open source **en cours de développement** d'un piège à moustiques "intelligent" actuellement basé sur un ESP32, mais évoluera sur d'autres MCU.
+Conçu pour attirer, capturer les moustiques **mâles** à l’aide de sons spécifiques, d’une aspiration contrôlée et d'une détection acoustique à des fins de prototypage de différentes déclinaisons.
 
-> 🔌 Peut fonctionner **avec ou sans domotique**. Mode **offline autonome** possible, y compris sur **batterie**.
+> 🔌 Peut fonctionner **avec ou sans domotique**. Mode **offline autonome** possible, y compris sur **batterie + panneau solaire**.
 
 ---
 
@@ -17,29 +18,30 @@ La répartition géographique de ces vecteurs s’étend fortement avec le **ré
 * **Projections climatiques** : les modèles prévoient une extension vers le nord et l’est de l’Europe avec des conditions favorables à la reproduction estivale dès les prochaines décennies ([Nature Climate Change, 2023](https://www.nature.com/articles/s41558-023-01895-0)).
 * **Monde** : l’aire de répartition d’**Aedes aegypti** augmente de 3,2–4,4 % par décennie, avec un déplacement vers le nord‑est de l’Amérique et de la Chine prévu d’ici 2050 ([Nature Climate Change, 2023](https://www.nature.com/articles/s41558-023-01895-0)).
 
-## ❓ Pourquoi piéger en priorité les moustiques mâles ?
+## ❓ Pourquoi piéger en priorité les moustiques mâles qui ne nous piquent pourtant pas?
 
-Les systèmes commerciaux les plus efficaces pour piéger les **femelles** utilisent souvent du **CO₂** comme leurre, émis par combustion de gaz ou via des bonbonnes sous pression. Ces solutions sont coûteuses, encombrantes, et énergivores.
+Les systèmes commerciaux actuels les plus efficaces pour piéger les moustiques (**femelles uniquement**) utilisent souvent du **CO₂** comme leurre, émis par combustion de gaz fossile, ou via des bonbonnes sous pression ou des phéromones. Ces solutions sont coûteuses, encombrantes, et énergivores.
 
-**OpenSquito adopte une approche plus vertueuse et économique** : en ciblant les **mâles**, il suffit de produire un **son** spécifique (simulant le vol des femelles) pour les attirer, sans émissions ni consommables.
-Pourquoi piéger en priorité les moustiques mâles ?
+**OpenSquito adopte une approche diamétralement opposée tout en étant plus vertueuse et économique** : en ciblant **uniquement les mâles**, il suffit seulement de produire un **son** spécifique (simulant le vol des femelles) pour les attirer, sans émissions ni consommables.
 
-* 🎯 **Attraction sonore ciblée** : les mâles recherchent activement le bourdonnement des femelles (≈ 400–600 Hz). Émettre judicieusement dans ces plages de fréquences permet de les attirer sélectivement.
+**Les avantages de ce projet:** 
+
+* 🎯 **Attraction sonore ciblée** : les mâles recherchent activement le bourdonnement des femelles (≈ 400–600 Hz selon les espèces). 
 * 🚫 **Briser le cycle de reproduction** : un seul mâle peut féconder plusieurs femelles ; retirer une petite fraction de mâles réduit significativement la descendance.
 * 🧪 **Surveillance passive** : mesurer le nombre de mâles capturés offre un indicateur indirect de l’activité globale, utile pour la recherche et l’alerte précoce.
-* 🌱 **Approche écologique** : aucun pesticide, peu d’énergie, fonctionnement silencieux.
+* 🌱 **Approche écologique** : aucun pesticide, peu d’énergie, pas de consommable, fonctionnement silencieux pour la majorité des cas d'usage. 
 
-Cette stratégie complète les méthodes de lutte dirigées contre les femelles (filets, larvicides, stérilisation incompatible) et peut être déployée dans les zones rurales comme urbaines.
+Cette stratégie **complète** les méthodes de lutte dirigées contre les femelles (filets, larvicides, moustiques OGM, etc) et peut être déployée dans les zones rurales comme urbaines.
 
 ---
 
 ## 🔧 Fonctionnalités principales
 
-* ✅ **Émission sonore** paramétrable (300–600 Hz) pour attirer les moustiques mâles
-* 🎤 **Détection acoustique** par microphone (I2S ou analogique)
-* 💨 **Aspiration contrôlée** avec ventilateur silencieux (Noctua 80 mm ≈ 15 CFM)
-* 🧠 **Automatisation** via ESPHome + Home Assistant (optionnelle)
-* 🔋 **Mode autonome offline** : déclenchement local, stockage de logs sur carte SD ou envoi LoRa/Wi-Fi ponctuel
+* ✅ **Émission sonore** paramétrable en fréquences (300–600 Hz) et en intensité pour attirer les moustiques mâles de différentes espèces
+* 🎤 **Détection acoustique** par microphone (I2S ou analogique) *à définir selon retex
+* 💨 **Aspiration contrôlée** avec ventilateur silencieux PWM
+* 🧠 **Automatisation** via ESPHome + Home Assistant (optionnel)
+* 🔋 **Mode autonome offline** : déclenchement local, stockage de logs sur carte SD
 * 🌐 **Connexion à un réseau citoyen mondial (opensquito.net)** : partage de données de capture pour la cartographie et la recherche
 
 ---
@@ -51,26 +53,26 @@ Cette stratégie complète les méthodes de lutte dirigées contre les femelles 
 | MCU          | ESP32 (OLIMEX ESP32-POE2)               | POE natif ou USB/batterie       |
 | Microphone   | INMP441 (I2S)                           | Faible bruit, facile à intégrer |
 | Driver audio | DAC I2S ou PWM                          | Selon la carte                  |
-| Ventilateur  | Noctua NF-A8 5V/12V                     | Silencieux, longue durée        |
+| Ventilateur  | PWM 5V/12V                              | Silencieux, longue durée        |
 | Alimentation | POE ↓ 48 V → 5 V DC, Power-Bank, Li-ion | S’adapte aux contextes          |
 
 ---
 
 ## 🦟 Espèces cibles & adaptation du piège
 
-* **Bande sonore ajustable** : modifiez la fréquence émise pour cibler d’autres genres (Culex, Anopheles…).
+* **Bande sonore ajustable** : modifiez la fréquence émise pour cibler d’autres espèces selon les régions (Culex, Anopheles…).
 * **Paramètres régionaux** : vitesse de ventilation, grille anti-évasion, taille du filet peuvent être adaptés aux espèces locales.
 * Un tableau de correspondance fréquence ⇄ espèce la plus réceptive figure dans `docs/species_frequency.md` (compilé par la communauté).
 
 ---
 
-## 🌐 Réseau citoyen mondial (OpenSquito.net)
+## 🌐 Réseau citoyen mondial OpenSquito.net (en cours de création)
 
 Même sans domotique locale, la version connectée peut :
 
-1. 📡 **Envoyer périodiquement** le comptage de captures (Wi-Fi, LoRa, LTE-M) vers une base de données libre.
+1. 📡 **Envoyer périodiquement** le comptage de captures (Wi-Fi, LoRa, LTE-M) vers une base de données libre et collaborative.
 2. 🗺️ **Cartographier** l’activité moustique en temps réel (interface publique type MapTiles).
-3. 🔔 **Détecter les flambées** régionales et informer les citoyens ou services de santé.
+3. 🔔 **Détecter les flambées** régionales et informer les citoyens ou/et éventuellement les services de santé.
 
 Toutes les données seront anonymisées et publiées sous licence **ODbL** pour encourager la recherche ouverte.
 
