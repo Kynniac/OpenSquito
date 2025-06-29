@@ -1,6 +1,6 @@
 # OpenSquito 🦟
 
-**OpenSquito** est un **projet** open source **en cours de développement** d'un piège à moustiques **innovant** "intelligent" actuellement basé actuellement sur un ESP32, mais sera porté sur d'autres MCU comme ARM et STM.
+**OpenSquito** est un **projet** open source **en cours de développement** d'un piège à moustiques **innovant** "intelligent" actuellement basé sur un ESP32, mais sera porté sur d'autres MCU comme ARM et STM.
 Conçu pour attirer et capturer les moustiques **mâles** à l’aide de sons spécifiques, d’une aspiration contrôlée et d'une détection acoustique à des fins de prototypage de différentes déclinaisons à venir.
 
 > 🔌 Peut fonctionner **avec ou sans domotique**. Mode **offline autonome** possible, y compris sur **batterie + panneau solaire**.
