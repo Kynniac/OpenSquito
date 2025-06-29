@@ -9,8 +9,7 @@ Conçu pour attirer et capturer les moustiques **mâles** à l’aide de sons sp
 
 ## 🌍 Enjeux et urgence d’agir
 
-Les moustiques sont **les insectes les plus dangereux du reigne du vivant**, responsables de plus de 700 000 décès humains chaque année en tant que vecteurs de maladies infectieuses graves comme le paludisme, la dengue, le Zika ou la fièvre jaune (sources : [OMS – Malaria Fact Sheet](https://www.who.int/news-room/fact-sheets/detail/malaria), [OMS – Dengue and severe dengue](https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue)). Chaque année, près de 700 millions de personnes contractent une maladie transmise par les moustiques.
-
+Les moustiques sont **les insectes les plus dangereux du reigne du vivant**, responsables de plus de 700 000 décès humains chaque année en tant que vecteurs de maladies infectieuses graves comme le paludisme, la dengue, le Zika ou la fièvre jaune (sources : [OMS – Malaria Fact Sheet](https://www.who.int/news-room/fact-sheets/detail/malaria), [OMS – Dengue and severe dengue](https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue)).
 La répartition géographique de ces vecteurs s’étend fortement avec le **réchauffement climatique** et l’urbanisation :
 
 * **Europe** : selon l’[ECDC Mosquito Maps](https://www.ecdc.europa.eu/en/disease-vectors/surveillance-and-disease-data/mosquito-maps) et l’[Institut Pasteur](https://www.pasteur.fr/fr/espace-presse/documents-presse/dengue-france-cas-autochtone-2023), **Aedes albopictus** (moustique tigre) est établi dans plus de 20 pays (France, Italie, Espagne, Suisse…), avec des cas autochtones de dengue, chikungunya et Zika.
