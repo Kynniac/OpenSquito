@@ -1,7 +1,7 @@
 # OpenSquito 🦟
 
-**OpenSquito** est un **projet** open source **en cours de développement** d'un piège à moustiques **innovant** 
-Actuellement basé sur un ESP32, mais à terme sera probablement porté sur d'autres MCU à des fins de réduction de coût comme les ARM et STM.
+**OpenSquito** est un **projet expérimental** open source **en cours de développement** d'un piège à moustiques **innovant**.
+Actuellement basé sur un ESP32, mais à terme pourrait être porté sur d'autres MCU à des fins de réduction de coût comme les ARM et STM.
 
 Conçu pour attirer et capturer les moustiques **mâles** à l’aide de sons spécifiques, d’une aspiration contrôlée et d'une détection acoustique, optique ou électrique à des fins de prototypage de différentes déclinaisons à venir.
 
@@ -25,7 +25,7 @@ La répartition géographique de ces vecteurs s’étend fortement avec le **ré
 Les systèmes commerciaux actuels les plus efficaces pour piéger les moustiques (**femelles uniquement**) utilisent souvent du **CO₂** comme leurre, émis par combustion de gaz fossile, ou via des bonbonnes sous pression ou des phéromones. 
 Ces solutions sont coûteuses (entre 350 et 1 000€ pièce), encombrantes, utilisent des consommables, relâchent du **CO₂** et sont énergivores.
 
-**OpenSquito adopte une approche diamétralement opposée tout en étant plus vertueuse et économique** 
+**OpenSquito adopte une approche diamétralement opposée tout en étant plus vertueuse et économique**.
 En ciblant **uniquement les mâles**, il suffit seulement de produire des **sons** spécifiques (simulant le vol des femelles) pour les attirer.
 Sans émissions autres que sonores; ni consommables.
 
@@ -36,7 +36,12 @@ Sans émissions autres que sonores; ni consommables.
 * 🧪 **Surveillance passive** : mesurer le nombre de mâles capturés offre un indicateur indirect de l’activité globale, utile pour la recherche et l’alerte précoce.
 * 🌱 **Approche écologique** : aucun pesticide, peu d’énergie, pas de consommable, fonctionnement silencieux pour la majorité des cas d'usage. 
 
-Cette stratégie **complète** les méthodes de lutte actuels dirigées contre les femelles (filets, larvicides, moustiques OGM, etc) et peut être déployée dans les zones rurales comme urbaines.
+Cette stratégie **complète** les méthodes de lutte actuelles dirigées contre les femelles (filets, larvicides, moustiques OGM, etc) et peut être déployée dans les zones rurales comme urbaines.
+
+**Les limites de ce projet:**
+
+* Cette approche cible **uniquement une très courte periode de la vie des moustiques**: celle de la reproduction avant que les femelles fécondées partent à notre rcherche.
+* **La fenetre de temps étant plus que réduite: l'emplacement des pièges doit être judicieusement réfléchie.**
 
 ---
 
