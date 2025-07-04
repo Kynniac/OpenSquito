@@ -1,15 +1,18 @@
 # OpenSquito 🦟
 
-**OpenSquito** est un **projet** open source **en cours de développement** d'un piège à moustiques **innovant** "intelligent" actuellement basé sur un ESP32, mais sera porté sur d'autres MCU comme ARM et STM.
-Conçu pour attirer et capturer les moustiques **mâles** à l’aide de sons spécifiques, d’une aspiration contrôlée et d'une détection acoustique à des fins de prototypage de différentes déclinaisons à venir.
+**OpenSquito** est un **projet** open source **en cours de développement** d'un piège à moustiques **innovant** 
+Actuellement basé sur un ESP32, mais à terme sera probablement porté sur d'autres MCU à des fins de réduction de coût comme les ARM et STM.
 
-> 🔌 Peut fonctionner **avec ou sans domotique**. Mode **offline autonome** possible, y compris sur **batterie + panneau solaire**.
+Conçu pour attirer et capturer les moustiques **mâles** à l’aide de sons spécifiques, d’une aspiration contrôlée et d'une détection acoustique, optique ou électrique à des fins de prototypage de différentes déclinaisons à venir.
+
+> 🔌 Pourra fonctionner **avec ou sans domotique**. Mode **offline autonome** possible, y compris sur **batterie + panneau solaire**.
 
 ---
 
 ## 🌍 Enjeux et urgence d’agir
 
-Les moustiques sont **les insectes les plus dangereux du reigne du vivant**, responsables de plus de 700 000 décès humains chaque année en tant que vecteurs de maladies infectieuses graves comme le paludisme, la dengue, le Zika ou la fièvre jaune (sources : [OMS – Malaria Fact Sheet](https://www.who.int/news-room/fact-sheets/detail/malaria), [OMS – Dengue and severe dengue](https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue)).
+Les moustiques sont **les insectes les plus dangereux du reigne du vivant**, responsables de plus de 700 000 décès humains chaque année en tant que vecteurs de maladies infectieuses graves comme le paludisme, la dengue, le Zika, Chikungunya ou la fièvre jaune (sources : [OMS – Malaria Fact Sheet](https://www.who.int/news-room/fact-sheets/detail/malaria), [OMS – Dengue and severe dengue](https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue)).
+
 La répartition géographique de ces vecteurs s’étend fortement avec le **réchauffement climatique** et l’urbanisation :
 
 * **Europe** : selon l’[ECDC Mosquito Maps](https://www.ecdc.europa.eu/en/disease-vectors/surveillance-and-disease-data/mosquito-maps) et l’[Institut Pasteur](https://www.pasteur.fr/fr/espace-presse/documents-presse/dengue-france-cas-autochtone-2023), **Aedes albopictus** (moustique tigre) est établi dans plus de 20 pays (France, Italie, Espagne, Suisse…), avec des cas autochtones de dengue, chikungunya et Zika.
@@ -19,9 +22,12 @@ La répartition géographique de ces vecteurs s’étend fortement avec le **ré
 
 ## ❓ Pourquoi piéger en priorité les moustiques mâles qui ne nous piquent pourtant pas?
 
-Les systèmes commerciaux actuels les plus efficaces pour piéger les moustiques (**femelles uniquement**) utilisent souvent du **CO₂** comme leurre, émis par combustion de gaz fossile, ou via des bonbonnes sous pression ou des phéromones. Ces solutions sont coûteuses (entre 350 et 1 000€ pièce), encombrantes, et énergivores.
+Les systèmes commerciaux actuels les plus efficaces pour piéger les moustiques (**femelles uniquement**) utilisent souvent du **CO₂** comme leurre, émis par combustion de gaz fossile, ou via des bonbonnes sous pression ou des phéromones. 
+Ces solutions sont coûteuses (entre 350 et 1 000€ pièce), encombrantes, utilisent des consommables, relâchent du **CO₂** et sont énergivores.
 
-**OpenSquito adopte une approche diamétralement opposée tout en étant plus vertueuse et économique** : en ciblant **uniquement les mâles**, il suffit seulement de produire des **sons** spécifiques (simulant le vol des femelles) pour les attirer, sans émissions autres que sonores; ni consommables.
+**OpenSquito adopte une approche diamétralement opposée tout en étant plus vertueuse et économique** 
+En ciblant **uniquement les mâles**, il suffit seulement de produire des **sons** spécifiques (simulant le vol des femelles) pour les attirer.
+Sans émissions autres que sonores; ni consommables.
 
 **Les avantages de ce projet:** 
 
@@ -30,7 +36,7 @@ Les systèmes commerciaux actuels les plus efficaces pour piéger les moustiques
 * 🧪 **Surveillance passive** : mesurer le nombre de mâles capturés offre un indicateur indirect de l’activité globale, utile pour la recherche et l’alerte précoce.
 * 🌱 **Approche écologique** : aucun pesticide, peu d’énergie, pas de consommable, fonctionnement silencieux pour la majorité des cas d'usage. 
 
-Cette stratégie **complète** les méthodes de lutte dirigées contre les femelles (filets, larvicides, moustiques OGM, etc) et peut être déployée dans les zones rurales comme urbaines.
+Cette stratégie **complète** les méthodes de lutte actuels dirigées contre les femelles (filets, larvicides, moustiques OGM, etc) et peut être déployée dans les zones rurales comme urbaines.
 
 ---
 
@@ -40,7 +46,7 @@ Cette stratégie **complète** les méthodes de lutte dirigées contre les femel
 * 🎤 **Détection acoustique** par microphone (I2S ou analogique) *à définir selon retex
 * 💨 **Aspiration contrôlée** avec ventilateur silencieux PWM
 * 🧠 **Automatisation** via ESPHome + Home Assistant (optionnel)
-* 🔋 **Mode autonome offline** : déclenchement local, stockage de logs sur carte SD
+* 🔋 **Mode autonome offline** : déclenchement local, stockage de logs sur carte SD, ou pas.
 * 🌐 **Connexion à un réseau citoyen www.opensquito.net** : partage de données de capture pour la cartographie et la recherche
 
 ---
@@ -69,7 +75,7 @@ Cette stratégie **complète** les méthodes de lutte dirigées contre les femel
 
 Même sans domotique locale, la version connectée peut :
 
-1. 📡 **Envoyer périodiquement** le comptage de captures (Wi-Fi, LoRa, LTE-M) vers une base de données libre et collaborative.
+1. 📡 **Envoyer périodiquement** le comptage de captures (via Wi-Fi, LoRa, LTE-M) vers une base de données libre et collaborative.
 2. 🗺️ **Cartographier** l’activité moustique en temps réel (interface publique type MapTiles).
 3. 🔔 **Détecter les flambées** régionales et informer les citoyens ou/et éventuellement les services de santé.
 
@@ -102,7 +108,7 @@ OpenSquito/
 
 ## 🤝 Contribuer
 
-Les contributions sont bienvenues ! Consultez [CONTRIBUTING.md](./CONTRIBUTING.md) pour le processus de fork/PR, le style de code et le Code of Conduct.
+Toutes les contributions sont bienvenues ! Consultez [CONTRIBUTING.md](./CONTRIBUTING.md) pour le processus de fork/PR, le style de code et le Code of Conduct.
 
 ---
 
